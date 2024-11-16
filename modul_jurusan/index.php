@@ -20,9 +20,9 @@
             <div class="card">
         <div class="card-header">
             <h3 class="float-start">Data Jurusan</h3>
-            <p class="float-end"><a class="btn btn-primary" href=""><i class="fa-solid fa-circle-plus"></i>Tambah Data</a></p>
+            <p class="float-end"><a class="btn btn-primary" href="form.jurusan.php"><i class="fa-solid fa-circle-plus"></i>Tambah Data</a></p>
         </div>
-        <div class="card-body text-center">
+        <div class="card-body">
         <table class="table table-striped">
                     <thead>
                         <tr>
@@ -33,15 +33,33 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        #1. koneksikan file ini
+                        include("../koneksi.php");
+
+                        #2. Menulis query
+                         $tampil = "SELECT * FROM jurusans";
+
+                        #3. Jalankan query
+                        $proses = mysqli_query($koneksi, $tampil);
+
+                        #4. looping data dari database
+                        $nomor = 1;
+                        foreach($proses as $data){
+
+                        ?>
                         <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <th scope="row"><?=$nomor++?></th>
+                        <td><?= $data['kode']?></td>
+                        <td><?= $data['jurusan']?></td>
                         <td>
                             <a class="btn btn-info btn-sm text-white" href=""><i class="fa fa-pen-to-square"></i></a>
                             <a class="btn btn-danger btn-sm" href=""><i class="fa-solid fa-trash"></i></a>
                         </td>
                         </tr>
+                        <?php
+                        }
+                        ?>
                     </tbody>
             </table>
             </div>
