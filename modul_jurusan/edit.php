@@ -27,6 +27,7 @@ $data = mysqli_fetch_array($edit);
     <link rel="stylesheet" href="../css/all.css">
 </head>
 <body>
+    
     <?php
          include_once('../navbar.php');
     ?>
