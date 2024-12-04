@@ -6,7 +6,7 @@
     $id = $_GET['xyz'];
     
     #3. Menulis query
-    $hapus = "DELETE FROM jurusans WHERE id='$id'";
+    $hapus = "DELETE FROM jurusans WHERE id='$id_buku'";
 
     #4. Jalankan query
     $proses = mysqli_query($koneksi, $hapus);
