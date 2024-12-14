@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/index.php">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Data Mahasiswa</a>
+          <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/modul_mahasiswa/index.php">Data Mahasiswa</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/modul_jurusan/index.php">Data Jurusan</a>
