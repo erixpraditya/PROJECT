@@ -75,6 +75,44 @@
                                 </div>
                                 <div class="modal-body">
                                      <img width="200" src="foto/<?=$data['foto']?>" alt="">
+                                     <table class="table">
+                                        <tr>
+                                            <td scope="col">NIM</td>
+                                            <th scope="col"> : <?=$data['nim']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Nama Lengkap</td>
+                                            <th scope="col"> : <?=$data['nama']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Tempat Lahir</td>
+                                            <th scope="col"> : <?=$data['tmp_lahir']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Tanggal Lahir</td>
+                                            <th scope="col"> : <?=$data['tgl_lahir']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Alamat</td>
+                                            <th scope="col"> : <?=$data['alamat']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Email</td>
+                                            <th scope="col"> : <?=$data['email']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Jenis Kelamin</td>
+                                            <th scope="col"> : <?=$data['jk']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Jurusan</td>
+                                            <th scope="col"> : <?=$data['jurusans_id']?></th>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">Dosen</td>
+                                            <th scope="col"> : <?=$data['dosens_id']?></th>
+                                        </tr>
+                                     </table>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -88,11 +126,11 @@
                             <a class="btn btn-info btn-sm text-white" href="edit.php?id=<?= $data['id']?>"><i class="fa fa-pen-to-square"></i></a>
 
                             <!-- Towmbol Hapus -->
-                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['nim']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
 
-                            <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="hapus<?=$data['nim']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">
@@ -104,7 +142,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                        <a href ="hapus.php?xyz=<?=$data['id']?>" class="btn btn-primary">Hapus</a>
+                                        <a href ="hapus.php?xyz=<?=$data['nim']?>" class="btn btn-primary">Hapus</a>
                                     </div>
                                     </div>
                                 </div>
