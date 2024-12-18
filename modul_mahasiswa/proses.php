@@ -12,11 +12,19 @@
     $jk = $_POST['jk'];
     $jurusans_id = $_POST['jurusans_id'];
     $dosens_id = $_POST['dosens_id'];
+
+    $nama_foto = $_FILES['foto']['name'];
+    $tmp_foto = $_FILES['foto']['tmp_name'];
     #3. Menulis query
-    $simpan = "INSERT INTO mahasiswas (nim,nama,tmp_lahir,tgl_lahir,alamat,email,jk,jurusans_id,dosens_id) VALUES ('$nim','$nama','$tmp_lahir','$tgl_lahir','$alamat','$email','$jk','$jurusans_id','$dosens_id')";
+    $simpan = "INSERT INTO mahasiswas (nim,nama,tmp_lahir,tgl_lahir,alamat,email,jk,jurusans_id,dosens_id,foto) 
+    VALUES ('$nim','$nama','$tmp_lahir','$tgl_lahir','$alamat','$email','$jk','$jurusans_id','$dosens_id','$nama_foto')";
 
     #4. Jalankan query
     $proses = mysqli_query($koneksi, $simpan);
+
+    #4.1 Proses upload file
+    $upload_foto = move_uploaded_file($tmp_foto,"foto/$nama_foto");
+
 
     #5. Mengalihkan halaman
     header("location:index.php");
