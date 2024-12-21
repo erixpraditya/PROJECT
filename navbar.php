@@ -18,6 +18,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/modul_dosen/index.php">Data Dosen</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/logout.php">Log out</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
