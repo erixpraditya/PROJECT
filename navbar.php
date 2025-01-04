@@ -19,6 +19,9 @@
           <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/modul_dosen/index.php">Data Dosen</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/ubahpassword.php">Ubah Password</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/is62/projek/PROJECT/logout.php">Log out</a>
         </li>
       </ul>
