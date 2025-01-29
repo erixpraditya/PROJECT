@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="../css/all.css">
 </head>
 <body>
-
-    <?php
-
-         include_once('../navbar.php');
-    ?>
-
 <div class="container">
     <div class="row mt-5">
         <div class="col-8 m-auto">
